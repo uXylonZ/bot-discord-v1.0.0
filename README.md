@@ -1,4 +1,5 @@
 > 🚧 PROJETO EM CONTRUÇÃO 🚧
+<p></p><p></p>
 
 > 🤖 BOT Discord v1.0.0 🤖
 <p>BOT Discord em JavaScript - Discord.JS v14 by uXylonZ</p>
