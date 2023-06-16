@@ -1,8 +1,8 @@
 > 🚧 PROJETO EM CONTRUÇÃO 🚧
 
 > 🤖 BOT Discord v1.0.0 🤖
-BOT Discord em JavaScript - Discord.JS v14 by uXylonZ
+<p>BOT Discord em JavaScript - Discord.JS v14 by uXylonZ</p>
 
 > ❗ USAR NA CMD DO VSCODE ❗
-npm i - Para instalar todas as bibliotecas necessárias
-node .  - Para ligar o BOT
+<p>npm i - Para instalar todas as bibliotecas necessárias</p>
+<p>node .  - Para ligar o BOT</p>
