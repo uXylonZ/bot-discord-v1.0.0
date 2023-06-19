@@ -6,13 +6,18 @@ module.exports = {
     name: 'ready',
     async execute(client, commands) {
 
-        const guild = client.guilds.cache.get('1047663932388683876');
-        const guildName = guild.name;
+        // const guild = client.guilds.cache.get('1047663932388683876');
+        const bot = client.user.tag;
+        const membros = client.users.cache.size
+        const servidores = client.guilds.cache.size
+        const server = "servidor"
+
+        if (servidores > 1) server = "servidores"
 
         let status = [
-            `${guildName}`,
-            `${guildName}`,
-            `${guildName}`,
+            `${servidores} ${server}`,
+            `em ${bot}`,
+            `${membros} membros`,
         ]
 
         /*        
