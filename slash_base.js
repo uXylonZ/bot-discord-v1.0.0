@@ -44,7 +44,27 @@ module.exports = {
                 .setRequired(true)),
     async execute(client, interaction) {
 
-        let embed = new Discord.EmbedBuilder()
+        let sem_perm = new Discord.EmbedBuilder()
+            .setDescription(`🚫 | Não tens permissão para utilizar este comando!`)
+            .setColor("Red");
+
+        if (!interaction.member.permissions.has(Discord.PermissionFlagsBits.Administrator)) {
+            interaction.reply({ embeds: [sem_perm], ephemeral: true }).then(() => {
+                setTimeout(() => {
+                    interaction.deleteReply()
+                }, 8000);
+            })
+        } else {
+
+            // Codigo
+
+        }
+
+        interaction.guild.channels.cache.get("") || interaction.channel // Pega um Canal ou usa o canal onde o comando foi usado
+        interaction.user.displayAvatarURL({ dynamic: true }) // Pega o avatar de um usuário
+        interaction.guild.iconURL({ dynamic: true }) // Pega a logo do servidor
+
+        let embed = new Discord.EmbedBuilder() 
             .setColor(0x0099FF)
             .setTitle('AAAAAAAA')
             .setURL('link')
